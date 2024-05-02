@@ -70,10 +70,10 @@ public class CadastroActivity extends AppCompatActivity {
         String cpf = editTextCpf.getText().toString().trim();
 
         if (!validarCampo(editTextNome, "Nome") ||
-                !validarCampo(editTextEmail, "E-mail") ||
-                !validarCampo(editTextSenha, "Senha") ||
-                !validarCampo(editTextTelefone, "Telefone") ||
                 !validarCampo(editTextCpf, "CPF") ||
+                !validarCampo(editTextEmail, "E-mail") ||
+                !validarCampo(editTextTelefone, "Telefone") ||
+                !validarCampo(editTextSenha, "Senha") ||
                 !validarFormatoEmail(editTextEmail) ||
                 !validarCPF(editTextCpf) ||
                 !validarTelefone(editTextTelefone) ||
@@ -185,12 +185,12 @@ public class CadastroActivity extends AppCompatActivity {
 
     private boolean validarSenha(EditText campoSenha) {
         String senha = campoSenha.getText().toString();
-        if (senha.length() < 8) {
-            campoSenha.setError("A senha deve ter pelo menos 8 caracteres");
-            return false;
-        }
         if (!senha.matches(".*[A-Z].*") || !senha.matches(".*[a-z].*") || !senha.matches(".*\\d.*") || !senha.matches(".*[@#$%^&+=].*")) {
             campoSenha.setError("A senha deve conter pelo menos uma letra maiúscula, uma letra minúscula, um número e um caractere especial");
+            return false;
+        }
+        if (senha.length() < 8) {
+            campoSenha.setError("A senha deve ter pelo menos 8 caracteres");
             return false;
         }
         return true;
