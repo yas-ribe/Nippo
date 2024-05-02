@@ -1,10 +1,12 @@
-package br.fecap.nippoprojeto;
+package br.fecap.nippoprojeto.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import androidx.appcompat.app.AppCompatActivity;
+
+import br.fecap.nippoprojeto.R;
 
 public class MainActivity extends AppCompatActivity {
 

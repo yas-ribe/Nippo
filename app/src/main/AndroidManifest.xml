@@ -14,7 +14,7 @@
         android:theme="@style/Theme.NippoProjeto"
         tools:targetApi="31">
         <activity
-            android:name=".AberturaActivity"
+            android:name=".activity.AberturaActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,17 +22,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CadastroActivity"
+        <activity android:name=".activity.CadastroActivity"
             android:label="cadastro_tela">
         </activity>
-        <activity android:name=".PerfilActivity"
+        <activity android:name=".activity.PerfilActivity"
             android:label="perfil_tela">
         </activity>
-        <activity android:name=".MainActivity"
+        <activity android:name=".activity.MainActivity"
             android:label="login_tela">
         </activity>
 
-        <activity android:name=".LoginActivity"
+        <activity android:name=".activity.LoginActivity"
             android:label="abertura_tela">
         </activity>
 

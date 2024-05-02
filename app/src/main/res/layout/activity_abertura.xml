@@ -7,19 +7,14 @@
     android:layout_height="match_parent"
     android:background="#B53C29"
     android:padding="20sp"
-    tools:context=".AberturaActivity">
+    tools:context=".activity.AberturaActivity">
 
     <ImageView
         android:id="@+id/imageLogoAbertura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="191dp"
-        android:layout_marginBottom="192dp"
         android:contentDescription="@string/logo_nippo_dents"
-        android:scaleType="fitCenter"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/nippoodontologia" />
+        app:srcCompat="@drawable/nippoodontologia"
+        tools:layout_editor_absoluteX="-4dp"
+        tools:layout_editor_absoluteY="181dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>

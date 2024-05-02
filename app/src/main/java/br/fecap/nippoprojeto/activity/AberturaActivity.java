@@ -1,9 +1,11 @@
-package br.fecap.nippoprojeto;
+package br.fecap.nippoprojeto.activity;
 
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+
+import br.fecap.nippoprojeto.R;
 
 public class AberturaActivity extends Activity {
     @Override
@@ -18,6 +20,6 @@ public class AberturaActivity extends Activity {
                 startActivity(intent);
                 finish();
             }
-        }, 3000);
+        }, 5000);
     }
 }
