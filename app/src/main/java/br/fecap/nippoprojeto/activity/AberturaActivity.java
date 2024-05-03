@@ -1,6 +1,5 @@
 package br.fecap.nippoprojeto.activity;
 
-package br.fecap.nippoprojeto.activity;
 
 
 import android.content.Intent;
